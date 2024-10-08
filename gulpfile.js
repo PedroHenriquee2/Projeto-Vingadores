@@ -7,12 +7,6 @@ function styles() {
     .pipe(gulp.dest('./dist/css'));
 }
 
-gulp.task('scripts', function(){
-    return gulp.src('src/js/*.js')
-    .pipe(gulp.dest('puclic/js'));
-});
-
-gulp.task('default', gulp.series('scripts'))
 exports.default = styles;
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
