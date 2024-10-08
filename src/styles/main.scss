@@ -131,3 +131,32 @@ figcaption {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .logos {
+        width: 150px; 
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .nav-links li a {
+        font-size: 14px; 
+    }
+
+    .text {
+        display: block; 
+        font-size: 18px; 
+    }
+
+    .figure {
+        width: calc(50% - 10px); 
+    }
+}

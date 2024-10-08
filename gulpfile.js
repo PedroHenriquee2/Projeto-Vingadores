@@ -9,7 +9,7 @@ function styles() {
 
 gulp.task('scripts', function(){
     return gulp.src('src/js/*.js')
-    .pipe(gulp.dest('pucliv/js'));
+    .pipe(gulp.dest('puclic/js'));
 });
 
 gulp.task('default', gulp.series('scripts'))
