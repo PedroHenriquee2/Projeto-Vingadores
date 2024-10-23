@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 80%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .banner img {
+        height: 400px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner img {
+        height: 300px;
+    }
+}
